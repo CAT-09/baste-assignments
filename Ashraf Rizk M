@@ -1,0 +1,50 @@
+function car (name, modal, color, year, weight, length, country){
+    this.name = name;
+    this.modal = modal;
+    this.color = color;
+    this.year = year;
+    this.weight = weight;
+    this.length = length;
+    this.country = country;
+
+    this.fuel = function(a){
+        return this.name + ' ' + a;
+    }
+
+    this.speed = function(speed){
+        return this.name + 'speed' + speed;
+    }
+
+    this.efficiency = function(efficiency){
+        return this.name + '' + efficiency;
+    }
+
+
+}
+
+let car1 = new car ('kayola', 'EVS', 'white', '180', '6 tones', '10 meters', 'Uganda');
+let car2 = new car ('lexus', 'SUV', 'green', '1999', '1.5 tones', '2 meters', 'Japan');
+let car3 = new car ('Ford', 'truck', 'black', '2006', '3.5 tones', '3.5 meters', 'USA');
+let car4 = new car ('TATA', 'lorry', 'yellow', '2018', '5 tones', '8 meters', 'India');
+let car5 = new car ('hummer', 'H5', 'blue', '2020', '4 tones', '4 meters', 'S.A');
+
+console.log(car1);
+console.log(car2);
+console.log(car3);
+console.log(car4);
+console.log(car5);
+
+console.log(car1.fuel('limure petrol'));
+console.log(car2.fuel('Total petrol'));
+console.log(car3.fuel('Shell Disel'));
+console.log(car4.fuel('Fuelex petrol'));
+
+console.log(car1.speed('70km/hr'));
+console.log(car2.speed('250km/hr'));
+console.log(car3.speed('300km/hr'));
+console.log(car4.speed('170km/hr'));
+
+console.log(car1.efficiency('100% good'));
+console.log(car2.efficiency('70% good'));
+console.log(car3.efficiency('83% good'));
+console.log(car4.efficiency('55% good'));
